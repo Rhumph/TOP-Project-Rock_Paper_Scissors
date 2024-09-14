@@ -57,22 +57,22 @@ function playGame(playerSelection) {
                         return drawProclomation;
                     } else if (playerSelectionCapitalised === "ROCK" && computerSelection === "SCISSORS") {
                         playerScoreCount++;
-                        return winProclomation;
+                        return lossConcession;
                     } else if (playerSelectionCapitalised === "ROCK" && computerSelection === "PAPER") {
                         computerScoreCount++;
-                        return lossConcession;
+                        return winProclomation;
                     } else if (playerSelectionCapitalised === "PAPER" && computerSelection === "SCISSORS") {
                         computerScoreCount++;
-                        return lossConcession;
+                        return winProclomation;
                     } else if (playerSelectionCapitalised === "PAPER" && computerSelection === "ROCK") {
                         playerScoreCount++;
-                        return winProclomation;
+                        return lossConcession;
                     } else if (playerSelectionCapitalised === "SCISSORS" && computerSelection === "ROCK") {
                         computerScoreCount++;
-                        return lossConcession;
+                        return winProclomation;
                     } else if (playerSelectionCapitalised === "SCISSORS" && computerSelection === "PAPER") {
                         playerScoreCount++;
-                        return winProclomation;
+                        return lossConcession;
                     }
                 }
                 playerSelection = '';
